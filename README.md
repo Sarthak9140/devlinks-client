@@ -7,7 +7,7 @@ Designed for developers, creators, and professionals who want to share multiple 
 
 # 🌍 Live Demo
 
-### 🔗 Coming Soon: https://devlinks-demo.com
+### 🔗 https://devlinks-client-g1tt-e4we94v2g-sarthak9140s-projects.vercel.app/
 
 ---
 
