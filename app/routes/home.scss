@@ -1,0 +1,222 @@
+.home {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #fafafa;
+
+  .home-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+
+    .phone-frame {
+      position: relative;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .phone-bg {
+      width: 100%;
+      display: block;
+    }
+
+    .phone-links {
+      position: absolute;
+      top: 290px;
+      left: 0;
+      right: 0;
+      padding: 0 37px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    .mobile-link {
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 1.3rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      max-width: 260px;
+      justify-content: center;
+      pointer-events: auto;
+
+      img {
+        width: 18px;
+        height: 18px;
+        filter: brightness(100) invert(1);
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      &.youtube {
+        background-color: #ff0000;
+      }
+
+      &.facebook {
+        background-color: #1877f2;
+      }
+
+      &.github {
+        background-color: #333;
+      }
+
+      &.linkedin {
+        background-color: #0077b5;
+      }
+
+      &.frontend-mentor {
+        background-color: #3f3f46;
+      }
+
+      &.hashnode {
+        background-color: #2962ff;
+      }
+    }
+  }
+
+  .home-right {
+    flex: 2;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    .right-head {
+      margin-bottom: 1.5rem;
+
+      h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #666;
+      }
+    }
+
+    .add-btn {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      border: 1.5px solid #633cff;
+      border-radius: 8px;
+      background: transparent;
+      color: #633cff;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      transition: all 0.25s ease;
+
+      &:hover {
+        background: #f3f1ff;
+      }
+    }
+
+    .before-data {
+      text-align: center;
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 2rem;
+
+      img {
+        max-width: 180px;
+        margin-bottom: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.4;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    .after-data {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .link-item {
+        display: flex;
+        align-items: center;
+        background: #fafafa;
+        padding: 0.8rem;
+        border-radius: 8px;
+        border: 1px solid #e0e0e0;
+
+        input {
+          border: none;
+          background: transparent;
+          width: 100%;
+          font-size: 1rem;
+          outline: none;
+        }
+      }
+    }
+
+    .right-save-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2rem;
+
+      button {
+        background: #633cff;
+        border: none;
+        border-radius: 8px;
+        padding: 0.7rem 1.5rem;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &:disabled {
+          background: #e0e0e0;
+          cursor: not-allowed;
+        }
+
+        &:not(:disabled):hover {
+          background: #522fd4;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+
+    .home-left {
+      order: 2;
+    }
+
+    .home-right {
+      order: 1;
+      width: 100%;
+    }
+  }
+}
