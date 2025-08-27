@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./home.scss";
-// import { Helmet } from "react-helmet-async";
-
 import AddLinks from "./components/addLinks/AddLinks";
 
 const platforms = [
@@ -52,12 +50,7 @@ function Home() {
   };
 
   return (
-    // <>
-    //   <Helmet>
-    //     <title>DevLinks</title>
-    //   </Helmet>
     <div className="home">
-      {/* Left: Mobile Phone */}
       <div className="home-left">
         <div className="phone-frame">
           <img
@@ -133,7 +126,6 @@ function Home() {
         </div>
       </div>
     </div>
-    // </>
   );
 }
 

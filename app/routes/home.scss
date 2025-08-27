@@ -207,16 +207,72 @@
     }
   }
 
+  //   @media (max-width: 900px) {
+  //     flex-direction: column;
+
+  //     .home-left {
+  //       display: none;
+  //     }
+
+  //     .home-right {
+  //       width: 100%;
+  //       padding: 1.5rem;
+  //       box-shadow: none;
+  //     }
+  //   }
+  // }
   @media (max-width: 900px) {
     flex-direction: column;
 
     .home-left {
-      order: 2;
+      display: none; // Hide phone preview
     }
 
     .home-right {
-      order: 1;
       width: 100%;
+      padding: 1.5rem;
+      box-shadow: none;
+
+      .before-data {
+        padding: 1.5rem;
+
+        img {
+          max-width: 120px;
+          max-height: 100px;
+          margin: 0.5rem 0.5rem 1rem 0.5rem;
+        }
+
+        h2 {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+
+      .right-head {
+        h1 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .add-btn {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+      }
+
+      .right-save-btn {
+        button {
+          width: 100%;
+          font-size: 0.95rem;
+          padding: 0.7rem;
+        }
+      }
     }
   }
 }
